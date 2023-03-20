@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/1660364328_2-kartinkin-net-p-fon-dlya-fotografa-krasivo-3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  position: relative;
+  height: 450px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding-left: 10px;
+  color: aliceblue;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.inputBox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+
+  
+}
+
+.inputBox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+  
+}
+
+.inputBox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.inputBox ion-icon {
+  position: absolute;
+  right: 8px;
+  top: 20px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.forget{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+}
+
+.forget input{
+  margin-right: 3px;
+}
+
+.forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+button{
+  width:100%;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  
+}
+
+.register {
+  font-size: .9em;
+  text-align: center;
+  color: #fff;
+  margin: 25px 0 10px;
+}
+
+.register p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register p a:hover{
+  text-decoration: underline;
 }
